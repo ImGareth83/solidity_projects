@@ -48,10 +48,33 @@ npm install
 npm test
 ```
 
+### 3. Miner
+
+A simple blockchain miner implementation that demonstrates proof-of-work mining. It creates blocks by finding a nonce that produces a hash below a target difficulty.
+
+**Features:**
+- Transaction mempool management
+- Proof-of-work mining with configurable difficulty
+- Block creation with nonce finding
+- Processes up to 10 transactions per block
+- SHA-256 hashing for block validation
+
+**Files:**
+- `index.js` - Mining logic with mempool and block management
+- `test.js` - Test suite for mining functionality
+
+**Usage:**
+```bash
+cd miner
+npm install
+npm test
+```
+
 ## Technologies
 
 - **Node.js** - Runtime environment
 - **ethereum-cryptography** - Cryptographic utilities for Ethereum
+- **crypto-js** - Cryptographic library for hashing
 - **Mocha** - Testing framework
 - **Chai** - Assertion library
 
