@@ -112,6 +112,29 @@ npm install
 npm test
 ```
 
+### 5. UTXO
+
+A UTXO (Unspent Transaction Output) model implementation demonstrating how Bitcoin-style transactions work. This simple JS project shows how transactions consume input UTXOs and create new output UTXOs, with validation and fee calculation.
+
+**Features:**
+- Transaction Output (TXO) representation with owner, amount, and spent status
+- Transaction execution with input and output UTXO validation
+- Prevention of double-spending by checking if UTXOs are already spent
+- Automatic fee calculation as the difference between input and output amounts
+- Support for multiple input and output UTXOs per transaction
+
+**Files:**
+- `TXO.js` - Transaction Output class representing unspent outputs
+- `Transaction.js` - Transaction class for executing UTXO-based transfers
+- `test.js` - Test suite for transaction execution and fee calculation
+
+**Usage:**
+```bash
+cd utxo
+npm install
+npm test
+```
+
 ## Technologies
 
 - **Node.js** - Runtime environment
