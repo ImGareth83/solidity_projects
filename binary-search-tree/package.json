@@ -1,0 +1,19 @@
+{
+  "name": "binary-search-tree",
+  "version": "1.0.0",
+  "description": "Binary search tree implementation",
+  "type": "module",
+  "main": "Tree.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  }
+}
