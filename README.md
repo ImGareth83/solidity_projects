@@ -158,6 +158,28 @@ npm install
 npm test
 ```
 
+### 7. Simple Merkle Tree
+
+A Merkle tree implementation demonstrating how cryptographic hash trees work. This project shows how multiple data items are combined into a single root hash through recursive pairing and concatenation, a fundamental concept in blockchain data structures.
+
+**Features:**
+- Recursive tree construction by pairing and concatenating nodes
+- Flexible concatenation function for different hashing strategies
+- Root hash generation from any number of leaves
+- Handles base cases including single leaf and empty tree scenarios
+- Efficient hierarchical hashing structure
+
+**Files:**
+- `index.js` - MerkleTree class with recursive layer building and root generation
+- `test.js` - Test suite for various leaf configurations (1, 2, 4, 8 leaves)
+
+**Usage:**
+```bash
+cd simple-merkle-tree
+npm install
+npm test
+```
+
 ## Technologies
 
 - **Node.js** - Runtime environment
