@@ -135,6 +135,29 @@ npm install
 npm test
 ```
 
+### 6. Binary Search Tree
+
+A binary search tree implementation demonstrating fundamental tree data structure concepts. This project shows how nodes are organized in a hierarchical structure with efficient insertion and search operations.
+
+**Features:**
+- Node class with data, left, and right child references
+- Recursive node insertion maintaining binary search tree property
+- Recursive search functionality to find nodes by value
+- Tree structure with root node management
+- Efficient O(log n) average case for insertion and search operations
+
+**Files:**
+- `Node.js` - Node class representing tree nodes with data and child references
+- `Tree.js` - Tree class with recursive addNode and hasNode methods
+- `test.js` - Test suite for tree operations and node insertion
+
+**Usage:**
+```bash
+cd binary-search-tree
+npm install
+npm test
+```
+
 ## Technologies
 
 - **Node.js** - Runtime environment
