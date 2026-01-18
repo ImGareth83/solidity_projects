@@ -167,14 +167,16 @@ A Merkle tree implementation demonstrating how cryptographic hash trees work. Th
 - Flexible concatenation function for different hashing strategies
 - Root hash generation from any number of leaves
 - Merkle proof generation for leaf verification
+- Merkle proof verification to validate proofs against root
 - Handles base cases including single leaf and empty tree scenarios
 - Automatic handling of odd-numbered nodes in layers (unpaired nodes are passed through)
 - Efficient hierarchical hashing structure with recursive layer building
 
 **Files:**
 - `index.js` - MerkleTree class with recursive layer building, root generation, and proof generation
+- `verify.js` - Proof verification function to validate merkle proofs against root
 - `testUtil.js` - Utility functions for SHA-256 hashing, hash concatenation, and proof verification
-- `test.js` - Comprehensive test suite covering root generation (1-8 leaves) and proof verification (10 leaves)
+- `test.js` - Comprehensive test suite with 32 tests covering root generation (1-8 leaves), proof generation (10 leaves), and proof verification (11 untampered + 4 tampered scenarios)
 
 **Usage:**
 ```bash
