@@ -32,6 +32,33 @@ class MerkleTree {
         return this.newLayer(newNodes);
     }
 
+    getProof(index, layers = this.leaves, proof = []){
+        if(layers.length === 1) return proof;
+        const newLayers = [];
+        const newIndex = Math.floor(index / 2);
+        
+        for(let i = 0; i < layers.length; i+= 2){
+            let left = layers[i];
+            let right = layers[i+1];
+            
+            if(right === undefined) {
+                newLayers.push(left);
+            } else {
+                newLayers.push(this.concat(left, right));
+                
+                // If current index is in this pair, add sibling to proof
+                if(i === index || i + 1 === index) {
+                    const isLeft = index % 2 === 0;
+                    proof.push({
+                        data: isLeft ? right : left,
+                        left: !isLeft
+                    });
+                }
+            }
+        }
+        return this.getProof(newIndex, newLayers, proof);
+    }
+
 }
 
 export default MerkleTree;
