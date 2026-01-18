@@ -167,11 +167,12 @@ A Merkle tree implementation demonstrating how cryptographic hash trees work. Th
 - Flexible concatenation function for different hashing strategies
 - Root hash generation from any number of leaves
 - Handles base cases including single leaf and empty tree scenarios
-- Efficient hierarchical hashing structure
+- Automatic handling of odd-numbered nodes in layers (unpaired nodes are passed through)
+- Efficient hierarchical hashing structure with recursive layer building
 
 **Files:**
 - `index.js` - MerkleTree class with recursive layer building and root generation
-- `test.js` - Test suite for various leaf configurations (1, 2, 4, 8 leaves)
+- `test.js` - Test suite covering various leaf configurations including odd and even numbers (1, 2, 3, 4, 5, 7, 8 leaves)
 
 **Usage:**
 ```bash
